@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<h1 class="page-header">Add Profile</h1>
+
+{% include 'flash_messages.html' %}
+
+{# Add the appropriate method and enctype attributes to the form tag to allow for file uploads #}
+<div id = bottom-form>
+  <form action="{{ url_for('profile') }}" method = "post"  enctype = "multipart/form-data">
+    
+  <p class = "fields">{{ form.firstname.label }}</p><br>
+  <input class = "field-area" type="text" name="firstname"/><br><br>
+          
+  <p class = "fields">{{ form.lastname.label }}</p><br>
+  <input class = "field-area" type="text" name="lastname"/><br><br>
+          
+  <p class = "fields">{{ form.gender.label }}</p><br>
+  <select class = "field-area" name = "gender">
+    <option value = "" disabled selected hidden>Select Gender</option>
+    <option value = "Male">Male</option> 
+    <option value = "Female">Female</option> 
+  </select><br><br>
+          
+  <p class = "fields">{{ form.email.label }}</p><br>
+  <input class = "field-area" type = 'text' name = 'email' placeholder = 'e.g. jdoe@example.com'><br><br>
+          
+  <p class = "fields">{{ form.location.label }}</p><br>
+  <input class = "field-area" type = 'text' name = 'location' placeholder = 'e.g. Kingston,Jamaica'><br><br>
+          
+  <p class = "fields">{{ form.biography.label }}</p><br>
+  <textarea class = "field-area" rows="4" cols="50" name = 'biography'></textarea><br><br>
+  
+    {{ form.csrf_token }}
+  <p class = "fields">{{ form.photo.label }}</p>
+  <p class = "field-area">{{ form.photo }}</p><br>
+  
+  <button type="submit" name="submit" class="btn btn-primary">Add Profile</button>
+    
+  </form>
+</div>
+{% endblock %}
+

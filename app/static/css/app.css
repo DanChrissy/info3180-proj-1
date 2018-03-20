@@ -1,3 +1,136 @@
 body {
     padding-top: 5rem;
+    background-color: #cce7ff;
 }
+
+#bottom-form, #profile, .user-profile{
+    background-color: white;
+    border-top: 3px solid #007ae6;
+}
+
+#top-form, #bottom-form{
+    margin-left: 10px;
+}
+
+#title{
+    font-size: 3em;
+    font-weight: bold;
+}
+.fields{
+    display: inline;
+    font-weight: bold;
+}
+
+.field-area, .fields{
+    margin-left: 3em;
+}
+
+.field-area{
+    border-radius: 10px;
+    width: 15em;
+}
+
+button{
+    background-color: #00e600;
+    border: 1px solid #00e600;
+    margin: 3px;
+    color:white;
+    border-radius: 10px;
+    margin-left: 3em;
+    margin-bottom: 10px;
+}
+
+#profile-body{
+    margin: auto;
+    position: relative;
+    width:800px;
+   
+}
+#profile{
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#pic{
+    height: 200px;
+    width: 150px;
+}
+
+#Upic{
+    margin-top: 5px;
+    height: 250px;
+    width: 300px;
+}
+.profile-bio{
+    color: grey;
+}
+
+#profile-pic, #short-bio, #profile-button{
+    display: inline-block;
+}
+
+#short-bio{
+    padding-left: 40px;
+}
+
+
+#profile-button{
+    margin-left: 50px
+}
+
+#button{
+    background-color: #7CFC00;
+    color: white;
+    border: 1px solid #7CFC00;
+}
+
+#name, #user-name{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.user-profile{
+    margin: auto;
+    position: relative;
+    width:800px;
+}
+
+#user-pic, #details{
+    display:inline-block;
+}
+
+#user-top, #user-middle, #user-bottom{
+    margin-left: 5em;
+    margin-bottom: 15px;
+}
+
+#details{
+    margin-left: 3em;
+}
+
+.user-details{
+    color: grey;
+}
+
+#user-top{
+    margin-top: 15px;
+}
+
+#user-bio,h4{
+    color: grey;
+}
+
+#follow{
+    
+    background-color: #007ae6;
+    border: 1px solid #007ae6;
+    margin: 3px;
+    color:white;
+    border-radius: 10px;
+    margin-left: 3em;
+    margin-bottom: 10px;
+    width: 7em;
+}
+
+
+

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+{% include 'flash_messages.html' %}
+
+<div class = "user-profile">
+    <div id = "user-top">
+        <div id = "user-pic">
+            <img id = "Upic" src="{{url_for('static', filename = "uploads/"+ user.photo) }}"></img>
+        </div>
+        <div id = "details">
+            <p id = "user-name">{{user.firstname}} {{user.lastname}}</p>
+            <p class = "user-details"><i class = "material-icons">&#xe0be;</i> {{user.email}}</p>
+            <p class = "user-details"><i class = "material-icons">&#xe0c8;</i> {{user.location}}</p>
+            <p class = "user-details"><i class = "fa">&#xf133;</i> Joined on {{user.date}}</p>
+        </div>
+    </div>
+    
+    <div id = "user-middle">
+        <h4>About Me</h4>
+        <p id = "user-bio">{{user.biography}}</p>
+    </div>
+    
+    <div id = "user-bottom">
+        <button id = "message">Send Message</button>
+        <button id = "follow">Follow</button>
+    </div>
+</div>
+
+{% endblock %}

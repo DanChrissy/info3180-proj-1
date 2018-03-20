@@ -1,5 +1,10 @@
 Flask==0.12
 Flask-WTF==0.14.2
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-Script
+Flask-Login
+psycopg2
 Jinja2==2.9.4
 MarkupSafe==0.23
 WTForms==2.1
